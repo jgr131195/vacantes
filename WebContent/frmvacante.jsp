@@ -38,9 +38,9 @@
         <h3 class="text-muted">My Company - Administración</h3>
         <nav>
           <ul class="nav nav-justified">
-            <li><a href="#">Crear Vacante</a></li>            
-            <li><a href="#">Vacantes</a></li>                        
-            <li><a href="#">Salir</a></li>            
+            <li><a href="admin?action=crear">Crear Vacante</a></li>            
+            <li><a href="vacante?action=lista">Vacantes</a></li>                        
+            <li><a href="admin?action=logout">Salir</a></li>            
           </ul>
         </nav>
       </div>
@@ -51,7 +51,7 @@
           <h3 class="panel-title">Crear Vacante</h3>
         </div>
         <div class="panel-body">
-         <form action="VacanteControlador" method="post">
+         <form action="vacante" method="post">
             <div class="form-group">
               <label for="nombre">Nombre</label>
               <input type="text" class="form-control" name="nombre" required id="nombre" value="" placeholder="Escriba el nombre la vacante">
